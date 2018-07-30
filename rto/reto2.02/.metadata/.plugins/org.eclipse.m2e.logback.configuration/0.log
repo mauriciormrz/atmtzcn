@@ -1,0 +1,11 @@
+2018-05-14 11:03:37,698 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-05-14 11:05:56,520 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.choucair.formacion:com.choucair.formacion:1.0 @ D:\Automatizacion\reto2.02\com.choucair.bancolombia\pom.xml.
+2018-05-14 11:06:00,468 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.choucair.bancolombia/src/main/java
+2018-05-14 11:06:00,469 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /com.choucair.bancolombia/src/test/java
+2018-05-14 11:06:00,469 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /com.choucair.bancolombia/src/test/resources
+2018-05-14 11:06:02,568 [Worker-6] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 9 sec
+2018-05-14 11:06:06,386 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-14 11:06:06,386 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Automatizacion\reto2.02\com.choucair.bancolombia\src\main\resources
+2018-05-14 11:06:06,388 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-05-14 11:06:06,394 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2018-05-15 07:12:01,900 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
