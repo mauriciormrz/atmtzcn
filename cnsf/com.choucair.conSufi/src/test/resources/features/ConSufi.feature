@@ -10,4 +10,4 @@ Feature: conSufi
 
     Examples: 
       | usuario  | contrasegna | ApplicationId | intervalo |
-      | ormramir | ormramir    |         25029 |       10 |
+      | andcifue | Root1234    |         25029 |        10 |

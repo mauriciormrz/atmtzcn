@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 
 import co.com.proyectobase.screenplay.tasks.Abrir;
+import co.com.proyectobase.screenplay.tasks.Realizar;
 import co.com.proyectobase.screenplay.util.Utilidades;
 import cucumber.api.DataTable;
 import cucumber.api.java.Before;
@@ -28,6 +29,7 @@ public class automationTestingRegisterStepDefinitions {
 	
 	@Given("^que Carlos quiere acceder a la Web Automation Demo Site$")
 	public void queCarlosQuiereAccederALaWebAutomationDemoSite() throws Exception {
+		System.out.println("\n1. Ir a la URL:");
 		carlos.wasAbleTo(Abrir.LaPaginaDeAutomationDemo());
 		Utilidades.esperar(5);
 	}
@@ -36,9 +38,8 @@ public class automationTestingRegisterStepDefinitions {
 	public void elRealizaElRegistroEnLaPagina(DataTable dtDatosFeture) throws Exception {
 		List<List<String>> data = dtDatosFeture.raw();
 		for (int i = 0; i < data.size(); i++) {
-			System.out.println("");
-			System.out.println("2.Buscar un producto:");
-			// compraVirtualSteps.Buscar_un_producto(data, i);
+			System.out.println("\n2. Realiza el registro en la pagina:");
+			carlos.attemptsTo(Realizar.RegistroPaginaDe(data,i));
 		}
 	}
 
