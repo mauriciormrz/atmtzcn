@@ -111,7 +111,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-08-2018 19:16</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-08-2018 08:54</span>
     <br style="clear:left"/>
 </div>
 
@@ -158,9 +158,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">Registro Orange HRM
+                                <span class="error-color">Registro Orange HRM
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -176,23 +176,67 @@
 
     <div class="story-title">
         <h3>Scenario:</h3>
-        <div class="scenario">Given que Juan necesita un empleado en el OrangeHRM<br>When el realiza el ingreso del registro en la aplicación<br>Then el visualiza el nuevo empleado en el aplicativo</div>
+        <div class="scenario">Given que Juan necesita un empleado en el OrangeHRM<br>When el realiza el ingreso del registro en la aplicacion<br>Then el visualiza el nuevo empleado en el aplicativo</div>
     </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+                        <div class="panel-heading title="Null pointer exception">
+                            Null pointer exception
+                        </div>
+                <div><!-- Stack trace -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal"
+                            data-target="#stacktraceModal-overall">
+                        View details
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="stacktraceModal-overall" tabindex="-1" role="dialog"
+                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                    java.lang.NullPointerException
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    co.com.proyectobase.screenplay.tasks.Diligenciar.performAs(Diligenciar.java
+                                    :28) <br>
+                                    co.com.proyectobase.screenplay.stepdefinitions.RegistroOrangeHRMDefinitions.elRealizaElIngresoDelRegistroEnLaAplicacion(RegistroOrangeHRMDefinitions.java
+                                    :43) <br>
+                                    ✽.el realiza el ingreso del registro en la aplicacion(src/test/resources/features/registroOrangeHRM.feature
+                                    :8) <br>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource8515795708738365588.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="4af3ff54833ab4529851112e32629caee9d7200bdc94d93cd2cf7fd023490811.png" title="Registro Orange HRM #1: {FirstName=Mauricio, LastName=Ramirez, Location=New York, Date_Of_Birth=1969-08-10, Marital_Status=Single, Gender=M, Nacionality=Colombian, Blood_Group=A, Hobbies=Movies}" width="1200"/>
-                <img src="7b4d726be4bfacb50e6631246c511a1caef125435c81945a9657168aacb1d566.png" title="Given que Juan necesita un empleado en el OrangeHRM" width="1200"/>
-                <img src="a4327fc4f96741982284292f885addaf11549dd9d37324e8fd0ace58db72961f.png" title="Juan opens the Orange home page" width="1200"/>
-                <img src="ebf160a23826435c7ada2668c0b5af6e8001a22f42a1f3d2f48fb9282ebc7586.png" title="Juan clicks on El boton para iniciar session" width="1200"/>
-                <img src="4af3ff54833ab4529851112e32629caee9d7200bdc94d93cd2cf7fd023490811.png" title="When el realiza el ingreso del registro en la aplicaci&oacute;n
-| Mauricio | Ramirez | New York | 1969-08-10 | Single | M | Colombian | A | Movies |" width="1200"/>
-                <img src="1eae1084ef61b01aa2bc8553a3228d7476342a17f5d248e1fc18448984ee24d2.png" title="Juan clicks on Menu Modulo de Informacion Personal - PIM" width="1200"/>
-                <img src="dc3f30235ffc877495687d3d7c108b2c201161e7f6b45b6348e3986e87364e0b.png" title="Juan clicks on Menu Agregar Empleado" width="1200"/>
-                <img src="4af3ff54833ab4529851112e32629caee9d7200bdc94d93cd2cf7fd023490811.png" title="Juan enters 'hola' into Nombre del Empleado" width="1200"/>
-                <img src="34c32f5fe4c8d0c1ad4f33354362df7354c996f9189a1b41e341155ed5c9363a.png" title="Then el visualiza el nuevo empleado en el aplicativo: <span class='success-color'>SUCCESS</span>" width="1200"/>
+                <img src="a637286dc8e6c46a08ff6a7ba580af9ed9cd68daa0bb430549eec3f5cd12899a.png" title="Given que Juan necesita un empleado en el OrangeHRM" width="1600"/>
+                <img src="d1420b0945c278e512a270deeb816dd49257f62cb00ee99e502c16002f38cad6.png" title="Juan opens the Orange home page" width="1600"/>
+                <img src="7273d57da27bd13971f42295d1fb476b0e1187bb88e7af9f0cbb3b902810b7e2.png" title="Juan clicks on El boton para iniciar session" width="1600"/>
+                <img src="bf02ca4fa0512e55bd74b8860f7b4a5fe70d6c91fb80693732dc933f18e0c6f1.png" title="Juan clicks on Menu Modulo de Informacion Personal - PIM" width="1600"/>
+                <img src="0770af7accfd1dd1d12d0d9ebb1bece537af42d25833c7ad6d79932950389e6b.png" title="Juan clicks on Menu Agregar Empleado" width="1600"/>
+                <img src="295987c93cda7a7e75bc42620286b8100fd6885c03df069067a3f94921a32d67.png" title="Juan enters 'hola' into Nombre del Empleado" width="1600"/>
+                <img src="692cde76495775c5827295b6648ad29d240fa9ff7beaa89cdda40f521bffd971.png" title="Perform as: Juan: <span class='error-color'>ERROR</span>" width="1600"/>
             </div>
         </div>
 

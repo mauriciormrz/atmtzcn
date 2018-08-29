@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Registro y verificacion de un nuevo empleado en la  pagina OrangeHRM" skipped="0" tests="1" time="30.38" timestamp="2018-08-12 07:16:06"><testcase name="Registro Orange HRM"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Registro y verificacion de un nuevo empleado en la  pagina OrangeHRM" skipped="0" tests="1" time="35.13" timestamp="2018-08-16 08:54:46"><testcase name="Registro Orange HRM"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+co.com.proyectobase.screenplay.tasks.Diligenciar.performAs(Diligenciar.java:28)&#13;
+co.com.proyectobase.screenplay.stepdefinitions.RegistroOrangeHRMDefinitions.elRealizaElIngresoDelRegistroEnLaAplicacion(RegistroOrangeHRMDefinitions.java:43)&#13;
+✽.el realiza el ingreso del registro en la aplicacion(src/test/resources/features/registroOrangeHRM.feature:8)&#13;
+</system-err></testcase></testsuite>

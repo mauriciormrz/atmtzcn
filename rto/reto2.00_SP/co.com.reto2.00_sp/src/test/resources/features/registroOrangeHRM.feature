@@ -5,7 +5,7 @@ Feature: Registro y verificacion de un nuevo empleado en la  pagina OrangeHRM
   @tag1
   Scenario Outline: Registro Orange HRM
     Given que Juan necesita un empleado en el OrangeHRM
-    When el realiza el ingreso del registro en la aplicación
+    When el realiza el ingreso del registro en la aplicacion
       | <FirstName> | <LastName> | <Location> | <Date_Of_Birth> | <Marital_Status> | <Gender> | <Nacionality> | <Blood_Group> | <Hobbies> |
     Then el visualiza el nuevo empleado en el aplicativo
 

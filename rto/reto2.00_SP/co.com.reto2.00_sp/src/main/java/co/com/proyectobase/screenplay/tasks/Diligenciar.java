@@ -18,10 +18,10 @@ public class Diligenciar implements Task{
 	@Override
 	public <T extends Actor> void performAs(T actor) {
 		actor.attemptsTo(Click.on(OrangeDashboardPage.MENU_PIM));
-		System.out.println("  a.Clic menú PIM.");
+		System.out.println("  a.Clic menu PIM.");
 		
 		actor.attemptsTo(Click.on(OrangeDashboardPage.MENU_ADD_EMPLOYEE));
-		System.out.println("  b.Clic menú Add Employee.");
+		System.out.println("  b.Clic menu Add Employee.");
 		
 		utilities.esperar(10);
 		actor.attemptsTo(Enter.theValue("hola").into(OrangeDashboardPage.FIRST_NAME));
@@ -31,8 +31,7 @@ public class Diligenciar implements Task{
 	
 	public static Diligenciar FormularioEmpleado(List<List<String>> data, int ind) {
 		System.out.println( data.get(ind).get(0));
-		this.data = data;
-		this.ind = ind;
+
 		return Tasks.instrumented(Diligenciar.class, data, ind);
 	}
 

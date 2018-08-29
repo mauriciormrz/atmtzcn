@@ -29,12 +29,12 @@ public class RegistroOrangeHRMDefinitions {
 
 	@Given("^que Juan necesita un empleado en el OrangeHRM$")
 	public void queJuanNecesitaUnEmpleadoEnElOrangeHRM() throws Exception {
-		System.out.println("\n1.Ingresar a la página de Orange HRM:");
+		System.out.println("\n1.Ingresar a la pagina de Orange HRM:");
 		juan.wasAbleTo(Abrir.LaPaginaDeOrangeHRM());
 	}
 
-	@When("^el realiza el ingreso del registro en la aplicación$")
-	public void elRealizaElIngresoDelRegistroEnLaAplicación(DataTable dtDatosForm) throws Exception {
+	@When("^el realiza el ingreso del registro en la aplicacion$")
+	public void elRealizaElIngresoDelRegistroEnLaAplicacion(DataTable dtDatosForm) throws Exception {
 		List<List<String>> data = dtDatosForm.raw();
 
 		for (int i = 0; i < data.size(); i++) {
