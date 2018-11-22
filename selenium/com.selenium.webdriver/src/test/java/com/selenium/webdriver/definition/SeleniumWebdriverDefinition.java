@@ -19,15 +19,30 @@ public class SeleniumWebdriverDefinition {
 		seleniumWebdriverSteps.navegar_a_la_pagina();
 	}
 
-	@When("^Interactuo con los componentes$")
-	public void interactuo_con_los_componentes()  {
+	@When("^Encuentro los componentes$")
+	public void encuentro_los_componentes()  {
 		System.out.println("");
-		System.out.println("1.Interactuar con los componentes:");
-		seleniumWebdriverSteps.interactuar_con_los_componentes();
+		System.out.println("2.Encontrar los componentes:");
+		seleniumWebdriverSteps.encontrar_los_componentes();
+	}
+	
+	@When("^Acciono los elementos$")
+	public void acciono_los_elementos()  {
+		System.out.println("");
+		System.out.println("3.Accionar los componentes:");
+		seleniumWebdriverSteps.accionar_los_componentes();
 	}
 
 	@Then("^Verifico su funcionamiento$")
 	public void verifico_su_funcionamiento() {
-
+		System.out.println("");
+		System.out.println("4.Verificar su funcionamiento:");
+	}
+	
+	@Then("^Cierro el navegador$")
+	public void cierro_el_navegador()  {
+		System.out.println("");
+		System.out.println("5.Cerrar el navegador:");
+		seleniumWebdriverSteps.cerrar_el_navegador();
 	}
 }

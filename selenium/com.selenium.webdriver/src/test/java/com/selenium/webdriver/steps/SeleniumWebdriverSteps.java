@@ -14,7 +14,7 @@ public class SeleniumWebdriverSteps {
 	}
 	
 	@Step
-	public void interactuar_con_los_componentes() {
+	public void encontrar_los_componentes() {
 		if (seleniumWebdriverPage.findElementById())
 			System.out.println(" a.El elemento fue encontrado usando el atributo id.");
 	
@@ -40,7 +40,44 @@ public class SeleniumWebdriverSteps {
 		if ( seleniumWebdriverPage.findElmentByCssSelector())
 			   System.out.println(" h.El elemento fue encontrado por cssSelector.");
 		
-		seleniumWebdriverPage.findElementsByTagName();
+		   System.out.println(" i.Encontrar mas de un elemento.");
+		   seleniumWebdriverPage.findElementsByTagName();
+
 	}
+	
+	public void accionar_los_componentes() {
+/*
+		System.out.println(" a.Clic en un elemento y escribir un texto.");
+		seleniumWebdriverPage.clickAndSendKeys();
+		
+		System.out.println(" b.Clic en botones y casillas de selección.");
+		seleniumWebdriverPage.clicRadioButtonAndCheckBoxes();
+		
+		System.out.println(" c.Selección de una opción drop down y una lista de selección multiple.");
+		seleniumWebdriverPage.clicSelect();
+		
+		System.out.println(" d.Obteniendo un atributo o texto: " + seleniumWebdriverPage.getTextOrAttr());
+		
+		System.out.println(" e.Cambiando el foco a una ventana.");
+		seleniumWebdriverPage.cambiarFocoVentana();
+		
+		System.out.println(" f.Cambiando el foco a una alerta.");
+		seleniumWebdriverPage.cambiarFocoAlerta();
+		
+		*/
+		System.out.println(" g.Cambiando el foco a un frame.");
+		seleniumWebdriverPage.cambiarFocoFrame();
+		
+		System.out.println(" h.Acciones en cadena.");
+		seleniumWebdriverPage.accionesEnCandena();
+
+	}
+
+	public void cerrar_el_navegador() {
+		seleniumWebdriverPage.salir();
+		
+	}
+
+
 
 }

@@ -7,5 +7,7 @@ Feature: Selenium WebDriver con Java
   @FindElementoById
   Scenario: Title of your scenario
     Given Navego a la pagina de internet para pruebas
-    When Interactuo con los componentes
+    When Encuentro los componentes
+    And Acciono los elementos
     Then Verifico su funcionamiento
+    And Cierro el navegador
