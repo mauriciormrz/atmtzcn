@@ -5,9 +5,11 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import java.text.DateFormat;
 import java.text.NumberFormat;
@@ -117,5 +119,13 @@ public class utilities {
 
 		return doble / 100;
 	}
+	
+	// Tecla esc para salir de una ventana de alerta
+	//public void escape() {
+	//	esperar(1);
+	//	Actions action = new Actions(getDriver());
+	//	action.sendKeys(Keys.ESCAPE).build().perform();
+	//	esperar(1);
+	//}
 }
 

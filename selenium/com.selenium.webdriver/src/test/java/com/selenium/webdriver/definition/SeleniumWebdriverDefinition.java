@@ -2,6 +2,7 @@ package com.selenium.webdriver.definition;
 
 import com.selenium.webdriver.steps.SeleniumWebdriverSteps;
 
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -33,16 +34,20 @@ public class SeleniumWebdriverDefinition {
 		seleniumWebdriverSteps.accionar_los_componentes();
 	}
 
-	@Then("^Verifico su funcionamiento$")
-	public void verifico_su_funcionamiento() {
-		System.out.println("");
-		System.out.println("4.Verificar su funcionamiento:");
-	}
 	
 	@Then("^Cierro el navegador$")
 	public void cierro_el_navegador()  {
 		System.out.println("");
-		System.out.println("5.Cerrar el navegador:");
+		System.out.println("4.Cerrar el navegador:");
 		seleniumWebdriverSteps.cerrar_el_navegador();
 	}
+	
+	@When("^Espera Explicita$")
+	public void espera_Explicita()  {
+		System.out.println("");
+		System.out.println("1.Espera explicita:");
+		seleniumWebdriverSteps.espera_explicita();
+	}
+	
+
 }

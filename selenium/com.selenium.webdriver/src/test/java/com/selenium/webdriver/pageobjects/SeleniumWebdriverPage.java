@@ -1,6 +1,8 @@
 //http://toolsqa.com/selenium-webdriver/findelement-and-findelements-command/
 //https://www.swtestacademy.com/xpath-selenium/
 //http://toolsqa.com/
+//https://www.tutorialselenium.com/2018/01/14/waits-en-selenium-webdriver/
+//https://www.seleniumeasy.com/selenium-tutorials/webdriver-wait-examples
 
 package com.selenium.webdriver.pageobjects;
 
@@ -9,6 +11,8 @@ import java.util.Set;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.selenium.webdriver.utilities.utilities;
 
@@ -118,6 +122,7 @@ public class SeleniumWebdriverPage extends PageObject{
 	}
 	
 	public  void findElementsByTagName() {
+		// Lista de elementos con la etiqueta tr
 		 List <WebElement> list = getDriver().findElements(By.tagName("tr"));
 		 System.out.println("   Number of links: "+list.size());
 		 for(int i = 0; i < list.size(); i++){
@@ -238,6 +243,13 @@ public class SeleniumWebdriverPage extends PageObject{
 		action.click();
 		action.perform();
 		utilities.esperar(3);
+	}
+
+	public void esperasExplicitas() {
+		WebDriverWait wait = new WebDriverWait(getDriver(),10);
+		WebElement btnEspera = wait.until(ExpectedConditions.elementToBeClickable(By.id("proceed")));
+		btnEspera.click();
+		utilities.esperar(5);
 	}
 	
 }

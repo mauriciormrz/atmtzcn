@@ -24,7 +24,6 @@ public class SeleniumWebdriverSteps {
 		if ( seleniumWebdriverPage.findElmentByXpath())
 			   System.out.println(" c.El elemento fue encontrado usando xpath.");
 
-	
 		if ( seleniumWebdriverPage.findElmentByClassName())
 			   System.out.println(" d.El elemento fue encontrado usando el atributo class.");
 		
@@ -45,8 +44,8 @@ public class SeleniumWebdriverSteps {
 
 	}
 	
+	@Step
 	public void accionar_los_componentes() {
-/*
 		System.out.println(" a.Clic en un elemento y escribir un texto.");
 		seleniumWebdriverPage.clickAndSendKeys();
 		
@@ -64,20 +63,23 @@ public class SeleniumWebdriverSteps {
 		System.out.println(" f.Cambiando el foco a una alerta.");
 		seleniumWebdriverPage.cambiarFocoAlerta();
 		
-		*/
+		
 		System.out.println(" g.Cambiando el foco a un frame.");
 		seleniumWebdriverPage.cambiarFocoFrame();
 		
 		System.out.println(" h.Acciones en cadena.");
 		seleniumWebdriverPage.accionesEnCandena();
-
 	}
 
+	@Step
 	public void cerrar_el_navegador() {
 		seleniumWebdriverPage.salir();
-		
 	}
 
-
+	@Step
+	public void espera_explicita() {
+		System.out.println(" a.Esperas explícitas.");
+		seleniumWebdriverPage.esperasExplicitas();
+	}
 
 }
